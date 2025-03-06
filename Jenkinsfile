@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'jenkins/jnlp-agent-python3' }
-    }
+    agent any
     stages {
         stage('Test') {
             steps {
